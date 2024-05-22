@@ -1,0 +1,789 @@
+/* Resetear todos los estilos por defecto*/
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;   
+}
+
+body{
+    background-color: lightgrey;
+}
+section{
+    background-color: white;
+}
+h1{
+    background-color: white ;
+    font-size: 20px;
+    text-align: justify;
+    margin: 10px;
+    font-family: "Courier New", Courier, monospace;
+    
+}
+h2{
+    background-color: white ;
+    font-size: 16px;
+    font-family: "Courier New", Courier, monospace;
+}
+.columnasDP h2 {
+    margin: 9px;
+    margin-bottom: 25px;
+}
+.columnasDP h3 {
+    margin: 10px;
+    margin-bottom: 28px;
+}
+.columnasADM h2{
+    margin-bottom: 35px;
+}
+.columnasADM h3{
+    margin-bottom: 39px;
+}
+
+h3{
+    background-color: white ;
+    font-size: 12px;
+    font-weight: normal;
+    font-family: "Courier New", Courier, monospace;
+}
+#acercaDeMiTitulo1{
+    margin-left: 10px ;
+}
+p{
+    background-color: white;
+    font-size: 16px;
+    text-align: justify;
+    margin: 10px;
+    font-family: "Courier New", Courier, monospace;
+}
+/*estilos Encabezados */
+li a{
+    background-color: transparent ;
+    font-size: 16px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+a{
+    font-size: 12px;
+    font-family: "Courier New", Courier, monospace;
+    text-decoration: none;
+}
+header {
+    position: fixed;  /* Inmovilizar el encabezado */
+    top: 0; /* Ajustar a la parte superior */
+    width: 100%; /* Ancho completo */
+    z-index: 1000; /* Z-index para asegurarse de que esté por encima del contenido */
+    /*background-color: rgba(161, 127, 255, 0.863); /* Color de fondo */
+}
+main{
+    margin-top: 120px;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between; /* Distribuye los elementos equitativamente */ 
+}
+section#encabezados{
+    height: 60px;
+    margin-top: 0px;
+    justify-content: space-between;
+    align-content: center;
+    margin-bottom: 120px;
+    width: 100%;
+    background-color: white;
+}
+.enlace-con-figura-Persona {
+    padding-left: 20px; /* Añade espacio a la izquierda para la figura */
+    background-image: url('Persona.png'); /* Ruta de la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: left center; /* Posición de la imagen */
+    /* Ajusta la altura y el ancho según sea necesario */
+    background-size: 16px 16px; /* Tamaño de la imagen */
+    opacity: 0.7;  /* Opcional: Ajusta la opacidad de la imagen */
+    width: 100px;
+}
+.enlace-con-figura-Persona:hover {
+    background-color: lightgray;
+}
+.enlace-con-figura-Laboral {
+    padding-left: 20px; /* Añade espacio a la izquierda para la figura */
+    background-image: url('Laboral.png'); /* Ruta de la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: left center; /* Posición de la imagen */
+    /* Ajusta la altura y el ancho según sea necesario */
+    background-size: 16px 16px; /* Tamaño de la imagen */
+    opacity: 0.7; /* Opcional: Ajusta la opacidad de la imagen */
+}
+.enlace-con-figura-Laboral:hover {
+    background-color: lightgray;
+}
+.enlace-con-figura-MiEducacion {
+    padding-left: 20px; /* Añade espacio a la izquierda para la figura */
+    background-image: url('MiEducacion.png'); /* Ruta de la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: left center; /* Posición de la imagen */
+    /* Ajusta la altura y el ancho según sea necesario */
+    background-size: 16px 16px; /* Tamaño de la imagen */
+    opacity: 0.7;/* Opcional: Ajusta la opacidad de la imagen */
+}
+.enlace-con-figura-MiEducacion:hover {
+    background-color: lightgray;
+}
+.enlace-con-figura-Contactame {
+    padding-left: 20px; /* Añade espacio a la izquierda para la figura */
+    background-image: url('Contactame.png'); /* Ruta de la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: left center; /* Posición de la imagen */
+    /* Ajusta la altura y el ancho según sea necesario */
+    background-size: 16px 16px; /* Tamaño de la imagen */
+    opacity: 0.7;/* Opcional: Ajusta la opacidad de la imagen */
+}
+.enlace-con-figura-Contactame:hover {
+    background-color: lightgray;
+}
+/* Seccion datos personales*/
+#datosPersonales{
+    width:300px;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin: 30px;
+}
+.columnasDP {
+    display: flex;
+}
+#datosPersonalesTitulo,
+#datosPersonalesDatos{
+    text-align:justify
+}
+#datosPersonalesDatos{
+    margin-left: 30px;
+    text-align: left;
+}
+
+/* Seccion Acerca de mi y Perfil profesional*/
+#acercaDeMi{
+    width:1400px;
+    height: 750px;
+    float: right;
+    margin-right: 10px;
+}
+.columnasADM {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos equitativamente */
+}
+#acercaDeMiTitulo1,
+#acercaDeMiDatos1,
+#acercaDeMiTitulo2,
+#acercaDeMiDatos2{
+    flex: 1;
+    text-align:justify;
+    position: relative;
+    margin-right: 10px;
+    height: 190px;
+}
+.dosSecciones{
+    font-size: 0; /* Elimina el espacio entre las secciones */
+    display: flex;
+    align-items: center; /* Alinea verticalmente */
+    justify-content: center; /* Opcional: Alinea horizontalmente */
+}
+#datosPersonales, #acercaDeMi {
+    display: grid;
+    
+}
+.tituloAcercaDeMi, .tituloPerfilProfesional{
+    position: relative;
+}
+.parrafoPP{
+    margin-top: 30px;
+}
+
+.linea-horizontal {
+    position: absolute; /* Establece posición absoluta para que la línea no afecte al flujo del contenido */
+    align-items: center; /* Alinea la línea en el cntro de la seccion */
+    left: 0; /* Ajusta la posición de inicio de la línea */
+    width: 100%; /* Establece la longitud de la línea */
+    height: 2px; /* Establece el grosor de la línea */
+    background-color: lightgray; /* Color de la línea */
+}
+.linea-horizontal2 {
+    position: absolute; /* Establece posición absoluta para que la línea no afecte al flujo del contenido */
+    align-items: center; /* Alinea la línea en el cntro de la seccion */
+    left: 0; /* Ajusta la posición de inicio de la línea */
+    width: 100%; /* Establece la longitud de la línea */
+    height: 2px; /* Establece el grosor de la línea */
+    background-color: lightgray; /* Color de la línea */
+}
+.linea-horizontal3 {
+    position: absolute; /* Establece posición absoluta para que la línea no afecte al flujo del contenido */
+    align-items: center; /* Alinea la línea en el cntro de la seccion */
+    left: 0; /* Ajusta la posición de inicio de la línea */
+    width: 100%; /* Establece la longitud de la línea */
+    height: 2px; /* Establece el grosor de la línea */
+    background-color: lightgray; /* Color de la línea */
+}
+#imagenesHabilidades{
+    display: flex;
+}    
+.imagenExcel, .imagenPowerBI, .imagenOffice, .imagenSap, .imagenOracle, .imagenBlueyonder,
+.imagenTMS, .imagenHTML, .imagenVBA, .imagenCSS, .imagenSQL, .imagenPYTHON, .imagenJS, .imagenVSC{
+    margin: 10px;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+.imagenPowerBI{
+    border: 1px solid yellowgreen;
+    border-radius: 10px;
+    width: 86px;
+    height: 62px;
+}
+.imagenOffice{
+    border: 1px solid yellowgreen;
+    border-radius: 10px;
+    width: 86px;
+    height: 62px;
+}
+.imagenSap{
+    border: 1px solid yellowgreen;
+    border-radius: 10px;
+    width: 86px;
+    height: 62px;
+}
+.imagenOracle{
+    border: 1px solid yellowgreen;
+    border-radius: 10px;
+    width: 86px;
+    height: 62px;
+}
+.imagenBlueyonder{
+    border: 1px solid yellowgreen;
+    border-radius: 10px;
+    width: 86px;
+    height: 62px;
+}
+.imagenTMS{
+    border: 1px solid yellowgreen;
+    border-radius: 10px;
+    width: 86px;
+    height: 62px;
+}
+.imagenHTML{
+    border: 1px solid yellowgreen;
+    border-radius: 10px;
+    width: 86px;
+    height: 62px;
+}
+.imagenVBA{
+    border: 1px solid yellowgreen;
+    border-radius: 10px;
+    width: 86px;
+    height: 62px;
+}
+.imagenCSS{
+    border: 1px solid yellowgreen;
+    border-radius: 10px;
+    width: 86px;
+    height: 62px;
+}
+.imagenSQL{
+    border: 1px solid yellowgreen;
+    border-radius: 10px;
+    width: 86px;
+    height: 62px;
+}
+.imagenPYTHON{
+    border: 1px solid yellowgreen;
+    border-radius: 10px;
+    width: 86px;
+    height: 62px;
+}
+.imagenJS{
+    border: 1px solid yellowgreen;
+    border-radius: 10px;
+    width: 86px;
+    height: 62px;
+}
+.imagenVSC{
+    border: 1px solid yellowgreen;
+    border-radius: 10px;
+    width: 86px;
+    height: 62px;
+}
+#imagenesHabilidades{
+    align-items: center;
+    justify-content: space-between;
+}
+/* MI EXPERIANCIA LABORAL */
+
+section#Woden{
+    background-color: transparent;
+    display: flex;
+    width: 1830px;
+    height: 150px;
+    margin-bottom: 30px;
+}
+#logoWoden{
+    margin-left: 10px;
+    margin-right: 10px;
+    align-content: center;
+}
+#cargoWoden{
+    margin-top: 20px;
+}
+#cargoWoden h3{
+    font-size: 15px;
+}
+#cargoWoden h3,h2{
+    background-color: transparent;
+}
+
+.Vineta{
+    padding-left: 10px; /* Espaciado a la izquierda para la viñeta */
+    margin-top: 10px; /* Espaciado superior */
+}
+.Vineta::before{
+    content: "\2022"; /* Código de la viñeta: • */
+    padding-right: 10px;
+}
+#funcionesWoden{
+    width: 1300px;
+    align-content: center;
+    border: 1px solid yellowgreen;
+}
+
+
+section#Almaviva{
+    background-color: transparent;
+    display: flex;
+    width: 1830px;
+    margin-bottom: 30px;
+    height: 150px;    
+}
+#logoAlmaviva{
+    margin-left: 10px;
+    margin-right: 10px;
+    align-content: center;
+}
+#cargoAlmaviva{
+    margin-top: 20px;
+}
+#cargoAlmaviva h2,h3{
+    background-color: transparent;
+}
+#cargoAlmaviva h3{
+    font-size: 15px;
+}
+#funcionesAlmaviva{
+    width: 1300px;
+    align-content: center;
+    border: 1px solid yellowgreen;
+}
+
+
+section#Truper{
+    background-color: transparent;
+    display: flex;
+    width: 1830px;
+    margin-bottom: 30px;
+    height: 150px;    
+}
+#logoTruper{
+    margin-left: 10px;
+    margin-right: 10px;
+    align-content: center;
+}
+#cargoTruper{
+    margin-top: 20px;
+}
+#cargoTruper h2,h3{
+    background-color: transparent;
+}
+#cargoTruper h3{
+    font-size: 15px;
+}
+#funcionesTruper{
+    width: 1300px;
+    align-content: center;
+    border: 1px solid yellowgreen;
+}
+
+section#GLM{
+    background-color: transparent;
+    display: flex;
+    width: 1830px;
+    margin-bottom: 30px;
+    height: 150px;     
+}
+#logoGLM{
+    margin-left: 10px;
+    margin-right: 10px;
+    align-content: center;
+    height: 150px;
+}
+#cargoGLM{
+    margin-top: 20px;
+}
+#cargoGLM h2,h3{
+    background-color: transparent;
+}
+#cargoGLM h3{
+    font-size: 15px;
+}
+#funcionesGLM{
+    width: 1300px;
+    align-content: center;
+    border: 1px solid yellowgreen;
+
+}
+
+
+
+section#BLU{
+    background-color: transparent;
+    display: flex;
+    width: 1830px;
+    margin-bottom: 30px; 
+    height: 140px;    
+}
+#logoBLU{
+    margin-left: 10px;
+    margin-right: 10px;
+    align-content: center;
+    height: 150px;
+}
+#cargoBLU{
+    margin-top: 20px;
+}
+#cargoBLU h2,h3{
+    background-color: transparent;
+}
+#cargoBLU h3{
+    font-size: 15px;
+}
+#funcionesBLU{
+    width: 1300px;
+    align-content: center;
+    border: 1px solid yellowgreen;
+}
+#funcionesWoden h2{
+    margin-top: 5px;
+}
+#funcionesAlmaviva h2{
+    margin-top: 5px;
+}
+#funcionesTruper h2{
+    margin-top: 5px;
+}
+#funcionesGLM h2{
+    margin-top: 5px;
+}
+#funcionesBLU h2{
+    margin-top: 5px;
+}
+#funcionesServientrega h2{
+    margin-top: 5px;
+}
+
+section#Servientrega{
+    background-color: transparent;
+    display: flex;
+    width: 1830px;
+    margin-bottom: 30px;
+    height: 140px;    
+}
+#logoServientrega{
+    margin-left: 10px;
+    margin-right: 10px;
+    align-content: center;
+}
+#cargoServientrega{
+    margin-top: 20px;
+}
+#cargoServientrega h2,h3{
+    background-color: transparent;
+}
+#cargoServientrega h3{
+    font-size: 15px;
+}
+#funcionesServientrega{
+    width: 1300px;
+    align-content: center;
+    border: 1px solid yellowgreen;
+}
+
+
+#logoYCargoWoden{
+    border: 1px solid yellowgreen;
+    display: flex;
+    width: 500px;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+#logoYCargoAlmaviva{
+    border: 1px solid yellowgreen;
+    display: flex;
+    width: 500px;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+#logoYCargoTruper{
+    border: 1px solid yellowgreen;
+    display: flex;
+    width: 500px;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+#logoYCargoGLM{
+    border: 1px solid yellowgreen;
+    display: flex;
+    width: 500px;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+#logoYCargoBLU{
+    border: 1px solid yellowgreen;
+    display: flex;
+    width: 500px;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+#logoYCargoServientrega{
+    border: 1px solid yellowgreen;
+    display: flex;
+    width: 500px;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+.viñetasEL{
+    align-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    /*background-color: black;*/
+    /*height: 180px;
+    width: 60px;
+    margin-top: 35px;*/
+}
+
+/* MI EDUCACION */
+
+.romboide {
+    width: 480px; /* Ancho del romboide */
+    height: 400px; /* Altura del romboide */
+    background-color: rgba(161, 127, 255, 0.863); /* Color de fondo */
+    position: relative;
+    transform: skew(-20deg); /* Inclina el romboide */
+    margin-left: 100px; /* Margen para visualizar el romboide */
+    margin-right: 115px; /* Margen para visualizar el romboide */
+    z-index: 1;
+    align-content: center;
+}
+
+.romboide::before,
+.romboide::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+}
+
+.romboide::before {
+    left: -50px;
+    border-right-color: transparent; /* Borde derecho del romboide */
+}
+
+.romboide::after {
+    right: -50px;
+    border-left-color: transparent; /* Borde izquierdo del romboide */
+}
+
+.ESLOG{
+    position: relative;
+    margin-left: 30px;
+    z-index: 2;
+}
+
+.tituloPregrado h1{
+    background-color:  transparent;
+}
+
+#titulosProfesionales{
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#contenidoRomboide{
+    display:flex;
+}
+.pieDePagina a{    
+    background-color: transparent;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;    
+}
+
+
+.pieDePagina{
+    position: relative;
+    z-index: 4;
+    margin-top: 50px;
+    margin-left: 90px;
+    width: 490px;
+    margin-left: 0px; 
+    text-align:center;   
+}
+
+
+#otrosTitulos{
+    display: flex;
+    width: 100%;
+    background-color: transparent;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.romboide2 {
+    width: 280px; /* Ancho del romboide */
+    height: 300px; /* Altura del romboide */
+    position: relative;
+    transform: skew(-20deg); /* Inclina el romboide */
+    /*margin-left: 250px; /* Margen para visualizar el romboide */
+    z-index: 1;
+    align-content: center;
+    margin-left: 100px; /* Margen para visualizar el romboide */
+    margin-right: 60px; /* Margen para visualizar el romboide */    
+    background-color:  rgb(127, 168, 255);
+}
+.tituloSENA h1{
+    background-color: transparent;
+}
+.romboide2::before,
+.romboide2::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+}
+
+.romboide2::before {
+    left: -50px;
+    border-right-color: transparent; /* Borde derecho del romboide */
+}
+
+.romboide2::after {
+    right: -50px;
+    border-left-color: transparent; /* Borde izquierdo del romboide */
+}
+.SENA{
+    position: relative;
+    margin-left: 10px;
+    margin-top: 50px;
+    z-index: 2;
+}
+.tituloSENA h1, h2{
+    margin-left: 10px;
+    /*background-color:  rgb(127, 229, 255);*/
+    width: 100%;
+    
+}
+.tituloSENA h1{
+    font-size: 16px;
+    /*background-color:  rgb(127, 229, 255);*/
+}
+.tituloSENA h2{
+    font-size: 11px
+}
+.pieDePaginaSENA{
+    font-size: 12px;
+    margin-left: 10px;
+    margin-top: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* CONTACTO */
+#contactame{
+    background-color:transparent;
+}
+#contactame h2{
+    font-size: 20px;
+}
+#contactame h3{
+    font-size: 18px;
+}
+#contactame h4{
+    font-size: 17px;
+}
+
+#tituloContactame{
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    /*margin-bottom: 100px;*/
+    /*background-color: black;*/
+}
+#tituloContactame h1{
+    font-size: 30px;
+    font-family: "Arial", sans-serif;
+}
+#datosContactame{
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    /*background-color: black;*/
+    margin-top: 50px;
+}
+
+.Fila1DatosContactame{
+    display: flex;
+}
+.ImagenTelefonoContactame{
+    margin: 10px;
+}
+.ImagenWhatsappContactame{
+    margin: 10px;    
+}
+.Fila2DatosContactame{
+    display: flex;
+    margin-top: 100px;
+}
+.ImagenCorreoContactame{
+    margin: 10px;
+}
+.ImagenLinkedInContactame{
+    margin: 10px;
+}
+
+.Columna1Telefono{
+    margin-right: 300px;
+    width: 500px;
+    background-color: transparent;
+}
+.Columna1Correo{
+    margin-right: 300px;
+    background-color: transparent;
+    width: 500px;
+}
+
+.Columna2LinkedIn{
+    background-color: transparent;
+    width: 500px;
+}
+.Columna2Whatsapp{
+    background-color: transparent;
+    width: 500px;
+}
