@@ -141,8 +141,11 @@ section#encabezados{
     background-color: lightgray;
 }
 /* Seccion datos personales*/
+#dosSeccione{
+    width: 100%;
+}
 #datosPersonales{
-    width:300px;
+    width:25%;
     height: 750px;
     display: flex;
     flex-direction: column;
@@ -163,7 +166,7 @@ section#encabezados{
 
 /* Seccion Acerca de mi y Perfil profesional*/
 #acercaDeMi{
-    width:1400px;
+    width:75%;
     height: 750px;
     float: right;
     margin-right: 10px;
@@ -648,7 +651,7 @@ section#Servientrega{
 }
 
 .romboide2 {
-    width: 280px; /* Ancho del romboide */
+    width: 295px; /* Ancho del romboide */
     height: 300px; /* Altura del romboide */
     position: relative;
     transform: skew(-20deg); /* Inclina el romboide */
@@ -656,7 +659,7 @@ section#Servientrega{
     z-index: 1;
     align-content: center;
     margin-left: 100px; /* Margen para visualizar el romboide */
-    margin-right: 60px; /* Margen para visualizar el romboide */    
+    margin-right: 100px; /* Margen para visualizar el romboide */    
     background-color:  rgb(127, 168, 255);
 }
 .tituloSENA h1{
