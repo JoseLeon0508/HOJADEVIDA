@@ -55,7 +55,8 @@ p{
     margin: 10px;
     font-family: "Courier New", Courier, monospace;
 }
-/*estilos Encabezados */
+
+/*ENCABEZADOS*/
 li a{
     background-color: transparent ;
     font-size: 16px;
@@ -140,17 +141,24 @@ section#encabezados{
 .enlace-con-figura-Contactame:hover {
     background-color: lightgray;
 }
-/* Seccion datos personales*/
-#dosSeccione{
+
+/* SECCION DATOS PERSONALES*/
+
+#dosSecciones{
     width: 100%;
+    height: 100%;
+    /*background-color: black;*/
+    display: flex;
+    justify-content: space-between; /* Opcional: Alinea horizontalmente */
 }
 #datosPersonales{
-    width:25%;
-    height: 750px;
+    width:20%;
+    /*height: 100%;*/
     display: flex;
     flex-direction: column;
-    float: left;
-    margin: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+    /*background-color: black;*/
 }
 .columnasDP {
     display: flex;
@@ -164,16 +172,19 @@ section#encabezados{
     text-align: left;
 }
 
-/* Seccion Acerca de mi y Perfil profesional*/
+/* SECCION ACERCA DE MI, PERFIL PROFESIONAL Y HABILIDADES*/
+
 #acercaDeMi{
-    width:75%;
-    height: 750px;
-    float: right;
+    width:80%;
+    /*height: 100%;*/
     margin-right: 10px;
+    /*background-color: black;*/
 }
+
 .columnasADM {
     display: flex;
     justify-content: space-between; /* Distribuye los elementos equitativamente */
+    
 }
 #acercaDeMiTitulo1,
 #acercaDeMiDatos1,
@@ -183,23 +194,15 @@ section#encabezados{
     text-align:justify;
     position: relative;
     margin-right: 10px;
-    height: 190px;
+    margin-top: 10px;
 }
-.dosSecciones{
-    font-size: 0; /* Elimina el espacio entre las secciones */
-    display: flex;
-    align-items: center; /* Alinea verticalmente */
-    justify-content: center; /* Opcional: Alinea horizontalmente */
-}
-#datosPersonales, #acercaDeMi {
-    display: grid;
-    
-}
-.tituloAcercaDeMi, .tituloPerfilProfesional{
+
+.tituloAcercaDeMi, .PerfilProfesional{
     position: relative;
 }
+
 .parrafoPP{
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 .linea-horizontal {
@@ -226,97 +229,115 @@ section#encabezados{
     height: 2px; /* Establece el grosor de la línea */
     background-color: lightgray; /* Color de la línea */
 }
+
 #imagenesHabilidades{
     display: flex;
 }    
 .imagenExcel, .imagenPowerBI, .imagenOffice, .imagenSap, .imagenOracle, .imagenBlueyonder,
 .imagenTMS, .imagenHTML, .imagenVBA, .imagenCSS, .imagenSQL, .imagenPYTHON, .imagenJS, .imagenVSC{
-    margin: 10px;
-    margin-left: 15px;
-    margin-top: 20px;
+    margin-left: 5px;
+    margin-top: 5px;
 }
+.imagenExcel{
+    border: 1px solid yellowgreen;
+    border-radius: 10px;
+    width: 84px;
+    height: 62px;
+}
+
 .imagenPowerBI{
     border: 1px solid yellowgreen;
     border-radius: 10px;
-    width: 86px;
+    width: 84px;
     height: 62px;
+    margin-top: 5px;
 }
 .imagenOffice{
     border: 1px solid yellowgreen;
     border-radius: 10px;
-    width: 86px;
+    width: 84px;
     height: 62px;
 }
 .imagenSap{
     border: 1px solid yellowgreen;
     border-radius: 10px;
-    width: 86px;
+    width: 84px;
     height: 62px;
+    /*background-color: black;*/
 }
 .imagenOracle{
     border: 1px solid yellowgreen;
     border-radius: 10px;
-    width: 86px;
+    width: 84px;
     height: 62px;
 }
 .imagenBlueyonder{
     border: 1px solid yellowgreen;
     border-radius: 10px;
-    width: 86px;
+    width: 84px;
     height: 62px;
 }
 .imagenTMS{
     border: 1px solid yellowgreen;
     border-radius: 10px;
-    width: 86px;
+    width: 84px;
     height: 62px;
 }
 .imagenHTML{
     border: 1px solid yellowgreen;
     border-radius: 10px;
-    width: 86px;
+    width: 84px;
     height: 62px;
 }
 .imagenVBA{
     border: 1px solid yellowgreen;
     border-radius: 10px;
-    width: 86px;
+    width: 84px;
     height: 62px;
 }
 .imagenCSS{
     border: 1px solid yellowgreen;
     border-radius: 10px;
-    width: 86px;
+    width: 84px;
     height: 62px;
 }
 .imagenSQL{
     border: 1px solid yellowgreen;
     border-radius: 10px;
-    width: 86px;
+    width: 84px;
     height: 62px;
 }
 .imagenPYTHON{
     border: 1px solid yellowgreen;
     border-radius: 10px;
-    width: 86px;
+    width: 84px;
     height: 62px;
 }
 .imagenJS{
     border: 1px solid yellowgreen;
     border-radius: 10px;
-    width: 86px;
+    width: 84px;
     height: 62px;
 }
 .imagenVSC{
     border: 1px solid yellowgreen;
     border-radius: 10px;
-    width: 86px;
+    width: 84px;
     height: 62px;
-}
+}    
 #imagenesHabilidades{
     align-items: center;
     justify-content: space-between;
 }
+.columna1ImagenesHablidades{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+.columna7ImagenesHablidades{
+    margin-right: 10px;
+}
+
 /* MI EXPERIANCIA LABORAL */
 
 section#Woden{
@@ -712,6 +733,7 @@ section#Servientrega{
 }
 
 /* CONTACTO */
+
 #contactame{
     background-color:transparent;
 }
