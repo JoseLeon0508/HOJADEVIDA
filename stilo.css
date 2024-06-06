@@ -162,13 +162,14 @@ section#encabezados{
 }
 .columnasDP {
     display: flex;
+    width: 100%;
 }
 #datosPersonalesTitulo,
 #datosPersonalesDatos{
     text-align:justify
 }
 #datosPersonalesDatos{
-    margin-left: 30px;
+    margin-left: 70px;
     text-align: left;
 }
 
@@ -237,6 +238,7 @@ section#encabezados{
 .imagenTMS, .imagenHTML, .imagenVBA, .imagenCSS, .imagenSQL, .imagenPYTHON, .imagenJS, .imagenVSC{
     margin-left: 5px;
     margin-top: 5px;
+    max-width: 100%;
 }
 .imagenExcel{
     border: 1px solid yellowgreen;
