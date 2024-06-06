@@ -737,7 +737,7 @@ section#Servientrega{
 /* CONTACTO */
 
 #contactame{
-    background-color:transparent;
+    background-color: transparent;
 }
 #contactame h2{
     font-size: 20px;
@@ -773,10 +773,14 @@ section#Servientrega{
     text-align: center;
     /*background-color: black;*/
     margin-top: 50px;
+    width: 100%;
 }
 
 .Fila1DatosContactame{
     display: flex;
+    background-color: transparent;
+    width: 100%;
+    justify-content: center;
 }
 .ImagenTelefonoContactame{
     margin: 10px;
@@ -786,7 +790,10 @@ section#Servientrega{
 }
 .Fila2DatosContactame{
     display: flex;
-    margin-top: 100px;
+    margin-top: 10px;
+    /*background-color: black;*/
+    width: 100%;
+    justify-content: center;
 }
 .ImagenCorreoContactame{
     margin: 10px;
@@ -796,21 +803,21 @@ section#Servientrega{
 }
 
 .Columna1Telefono{
-    margin-right: 300px;
-    width: 500px;
+    /*width: 100%;*/
     background-color: transparent;
+    margin-right: 220px;
 }
 .Columna1Correo{
-    margin-right: 300px;
     background-color: transparent;
-    width: 500px;
+    /*width: 100%;*/
+    margin-right: 100px;
 }
 
 .Columna2LinkedIn{
-    background-color: transparent;
-    width: 500px;
+    background-color:  transparent;
+    /*width: 100%;*/
 }
 .Columna2Whatsapp{
     background-color: transparent;
-    width: 500px;
+    /*width: 100%;*/
 }
