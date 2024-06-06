@@ -152,7 +152,7 @@ section#encabezados{
     justify-content: space-between; /* Opcional: Alinea horizontalmente */
 }
 #datosPersonales{
-    width:20%;
+    /*width:20%;*/
     /*height: 100%;*/
     display: flex;
     flex-direction: column;
