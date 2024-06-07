@@ -142,6 +142,20 @@ section#encabezados{
     background-color: lightgray;
 }
 
+.descargar{
+    padding-left: 20px; /* Añade espacio a la izquierda para la figura */
+    background-image: url('Descargar.png'); /* Ruta de la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: left center; /* Posición de la imagen */
+    /* Ajusta la altura y el ancho según sea necesario */
+    background-size: 16px 16px; /* Tamaño de la imagen */
+    opacity: 0.7;/* Opcional: Ajusta la opacidad de la imagen */
+}
+.descargar:hover {
+    background-color: lightgray;
+}
+
+
 /* SECCION DATOS PERSONALES*/
 
 #dosSecciones{
