@@ -674,15 +674,15 @@ section#Servientrega{
 }
 
 .romboide2 {
-    width: 295px; /* Ancho del romboide */
+    width: 100%; /* Ancho del romboide */
     height: 300px; /* Altura del romboide */
     position: relative;
     transform: skew(-20deg); /* Inclina el romboide */
     /*margin-left: 250px; /* Margen para visualizar el romboide */
     z-index: 1;
     align-content: center;
-    margin-left: 100px; /* Margen para visualizar el romboide */
-    margin-right: 100px; /* Margen para visualizar el romboide */    
+    margin-left: 90px; /* Margen para visualizar el romboide */
+    margin-right: 90px; /* Margen para visualizar el romboide */    
     background-color:  rgb(127, 168, 255);
 }
 .tituloSENA h1{
@@ -709,12 +709,12 @@ section#Servientrega{
 }
 .SENA{
     position: relative;
-    margin-left: 10px;
+    margin-left: 5px;
     margin-top: 50px;
     z-index: 2;
 }
 .tituloSENA h1, h2{
-    margin-left: 10px;
+    margin-left: 5px;
     /*background-color:  rgb(127, 229, 255);*/
     width: 100%;
     
